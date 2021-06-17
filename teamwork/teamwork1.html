@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        /* *{
+            border: 1px solid black;
+        } */
+        #container{
+            /* background-color: blueviolet; */
+            margin: auto;
+            width: 600px;
+            height: auto;
+        }
+        #container header h1{
+            border-top: 1px solid black;
+            /* text-decoration: overline; */
+            /* outline: 1px solid red; */
+            font-size: 50px;
+            letter-spacing: 1px;
+            line-height: 40px;
+            font-weight: lighter;
+        }
+        #inner-container {
+            margin: auto;
+            width: auto;
+        }
+        input:hover {
+        border-color: blue;
+        }
+        main {
+            line-height: 15px;
+            font-size: 12px;
+        }
+        .big-size {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="inner-container">
+        <header>
+            <h1>Clarusway Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <main>
+            <form action="" method="GET">
+                <div>
+                    <label for="fname">Name</label>
+                    <br><br>
+                    <input type="text" id="fname" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label for="sname">Surname</label>
+                    <br><br>
+                    <input type="text" id="sname" placeholder="Enter your Surname">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <br><br>
+                    <input type="email" id="email" placeholder="user@clarusway.com">
+                </div>
+                <div>
+                    <label for="email" class="big-size">Which option best describes your current role?</label>
+                    <br><br>
+                     <select name="crole" id="crole">
+                         <option value="">Select current role</option>
+                         <option value="student">Student</option>
+                         <option value="teacher">teacher</option>
+                         <option value="mentor">mentor</option>
+                     </select>
+                     <br><br>
+                </div>
+                <div>
+                    <label for="" class="big-size">Would you recommed Clarusway to a friend?</label>
+                    <br><br>
+                    <input type="radio" name="friend" id="friend1" value="Definitely, Yes">
+                    <label for="friend1">Definitely, Yes</label>
+                    <br><br>
+                    <input type="radio" name="friend" id="friend2" value="Maybe">
+                    <label for="friend2">Maybe</label>
+                    <br><br>
+                    <input type="radio" name="friend" id="friend3" value="Not sure">
+                    <label for="friend3">Not sure</label>
+                    <br><br>
+                    <input type="radio" name="friend" id="friend4" value="Definitely, No">
+                    <label for="friend4">Definitely, No</label>
+                    <br><br>
+                </div>
+                <div>
+                    <label for="feature" class="big-size">What is your favorite feature of Clarusway?</label>
+                    <br><br>
+                    <input type="text" name="feature" id="feature" list="fdatalist" placeholder="Select an option">
+                    <datalist id="fdatalist">
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JS">JS</option>
+                    </datalist>
+                    <div>
+                        
+                        <label for="" class="big-size">What would you like to see improved?(Check all that apply?)</label>
+                        <br><br>
+                        <input type="checkbox" name="path" id="path1" value="Front-end Projects">
+                        <label for="path1">Front-end Projects</label>
+                        <br><br>
+                        <input type="checkbox" name="path" id="path2" value="Back-end Projects">
+                        <label for="path2">Back-end Projects</label>
+                        <br><br>
+                        <input type="checkbox" name="path" id="path3" value="Data Science">
+                        <label for="path3">Data Science</label>
+                        <br><br>
+                        <input type="checkbox" name="path" id="path4" value="Additional Courses">
+                        <label for="path4">Additional Courses</label>
+                        <br><br>
+                        <div>
+                            <label for="comment" class="big-size">Any comments or suggestions?</label>
+                            <br><br>
+                            <textarea name="comment" id="comment" cols="20" rows="2" placeholder="Enter your comment here...Thanks for your comment"></textarea>
+                            <button type="submit" >Submitt</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+        
+        </div>
+    </div>
+</body>
+</html>                    
